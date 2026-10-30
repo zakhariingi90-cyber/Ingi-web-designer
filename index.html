@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingi Z. — Web Designer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="description" content="Ingi Z., web designer: siti vetrina, e-commerce Shopify, landing page, restyling, logo e campagne social per aziende e professionisti. Richiedi un preventivo su WhatsApp.">
+  <meta name="theme-color" content="#26262C">
+  <!-- Anteprima quando il link viene condiviso su WhatsApp e social -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Ingi Z. — Web Designer">
+  <meta property="og:description" content="Siti web che fanno crescere la tua attività: siti vetrina, e-commerce, landing page e campagne social.">
+  <link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#contenuto" class="skip-link">Vai al contenuto</a>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo" aria-label="Ingi Z. Web Designer">
+        <span class="logo__mark">I.Z</span>
+        <span class="logo__text">
+          <span class="logo__name">INGI Z.</span>
+          <span class="logo__tag">Web Designer</span>
+        </span>
+      </a>
+      <nav class="nav__links">
+        <a href="#">Home</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#lavori">Lavori</a>
+        <a href="#chi-sono">Chi sono</a>
+        <a href="#contatti" class="btn btn--small">Parliamone</a>
+      </nav>
+      <button class="nav__toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile a scomparsa -->
+  <div class="drawer" id="menu-mobile">
+    <div class="drawer__backdrop"></div>
+    <aside class="drawer__panel" aria-label="Menu">
+      <div class="drawer__head">
+        <span class="logo__mark">I.Z</span>
+        <button class="drawer__close" type="button" aria-label="Chiudi il menu">&times;</button>
+      </div>
+      <nav class="drawer__links">
+        <a href="#"><span>01</span>Home</a>
+        <a href="#servizi"><span>02</span>Servizi</a>
+        <a href="#lavori"><span>03</span>Lavori</a>
+        <a href="#metodo"><span>04</span>Come lavoro</a>
+        <a href="#chi-sono"><span>05</span>Chi sono</a>
+        <a href="#faq"><span>06</span>Domande</a>
+        <a href="#contatti"><span>07</span>Contatti</a>
+      </nav>
+      <a href="#contatti" class="btn drawer__cta">Parliamone</a>
+    </aside>
+  </div>
+
+  <main id="contenuto">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow">Web design &amp; digital marketing</p>
+        <h1>Siti web che fanno <span class="accent">crescere</span> la tua attività.</h1>
+        <p class="hero__sub">Dal sito vetrina all'e-commerce, fino alle campagne social: ti aiuto a farti trovare, capire e scegliere online.</p>
+        <div class="hero__actions">
+          <a href="#contatti" class="btn">Parlami del tuo progetto</a>
+          <a href="#lavori" class="btn btn--ghost">Guarda i lavori</a>
+        </div>
+      </div>
+      <div class="mockups">
+        <span class="hero__emblem-ring"></span>
+        <span class="hero__emblem-ring hero__emblem-ring--inner"></span>
+
+        <!-- Laptop e telefono con i progetti realizzati: la pagina scorre da sola -->
+        <div class="laptop">
+          <div class="laptop__screen">
+            <img class="shot" src="assets/lavori/micostruzioni-desktop.jpg" alt="">
+          </div>
+          <div class="laptop__base"></div>
+        </div>
+
+        <div class="phone">
+          <div class="phone__screen">
+            <img class="shot shot--phone" src="assets/lavori/micostruzioni-mobile.jpg" alt="">
+          </div>
+        </div>
+
+        <a href="#lavori" class="mockups__caption">
+          <span class="mockups__caption-tag">I miei progetti</span>
+          <span><span class="mockups__caption-name">M.I. Costruzioni</span> &rarr;</span>
+        </a>
+
+        <span class="badge badge--1" aria-hidden="true">Responsive</span>
+        <span class="badge badge--2" aria-hidden="true">Sito vetrina</span>
+        <span class="badge badge--3" aria-hidden="true">SEO</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIZI -->
+  <section id="servizi" class="section">
+    <div class="container">
+      <p class="eyebrow">SERVIZI</p>
+      <h2>Cosa posso fare <span class="accent">per te.</span></h2>
+      <div class="grid grid--services">
+        <article class="card" data-servizio="Sito vetrina">
+          <span class="card__num">01</span>
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="2.5" y="3.5" width="19" height="13" rx="2"/><path d="M8 20.5h8M12 16.5v4M2.5 7.5h19"/><circle cx="5" cy="5.5" r=".4"/></svg>
+          </span>
+          <h3>Sito vetrina</h3>
+          <p>Il biglietto da visita online della tua attività: chi sei, cosa offri e come contattarti, chiaro e curato su ogni dispositivo.</p>
+          <button type="button" class="card__more">Scopri di più <span aria-hidden="true">&rarr;</span></button>
+          <template>
+            <p>Il sito vetrina è la base della tua presenza online: il posto dove i clienti ti trovano, capiscono cosa fai e decidono di contattarti.</p>
+            <h4>Cosa include</h4>
+            <ul>
+              <li>Design su misura, coerente con la tua immagine</li>
+              <li>Pagine principali: home, chi siamo, servizi, galleria, contatti</li>
+              <li>Versione perfetta per smartphone e tablet</li>
+              <li>Pulsanti per chiamare, WhatsApp e mappa</li>
+              <li>Ottimizzazione di base per Google (SEO)</li>
+            </ul>
+            <h4>Ideale per</h4>
+            <p>Artigiani, imprese, studi professionali, negozi e attività locali.</p>
+          </template>
+        </article>
+        <article class="card" data-servizio="E-commerce Shopify">
+          <span class="card__num">02</span>
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 7.5h14l-1.2 12a1.5 1.5 0 0 1-1.5 1.5H7.7a1.5 1.5 0 0 1-1.5-1.5z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg>
+          </span>
+          <h3>E-commerce Shopify</h3>
+          <p>Il tuo negozio online su Shopify, pronto a vendere: catalogo, pagamenti e spedizioni configurati, con un design che valorizza i prodotti.</p>
+          <button type="button" class="card__more">Scopri di più <span aria-hidden="true">&rarr;</span></button>
+          <template>
+            <p>Shopify è una delle piattaforme più usate al mondo per vendere online: sicura, semplice da gestire anche per chi non è esperto.</p>
+            <h4>Cosa include</h4>
+            <ul>
+              <li>Configurazione completa del negozio Shopify</li>
+              <li>Tema personalizzato con i colori del tuo brand</li>
+              <li>Caricamento prodotti, categorie e varianti</li>
+              <li>Pagamenti, spedizioni e pagine legali</li>
+              <li>Spiegazione su come gestire ordini e prodotti in autonomia</li>
+            </ul>
+            <h4>Ideale per</h4>
+            <p>Chi vuole iniziare a vendere online o portare il proprio negozio fisico sul web.</p>
+          </template>
+        </article>
+        <article class="card" data-servizio="Landing page">
+          <span class="card__num">03</span>
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+          </span>
+          <h3>Landing page</h3>
+          <p>Una pagina pensata per un solo obiettivo: promuovere un prodotto, un evento o un'offerta e trasformare i visitatori in contatti.</p>
+          <button type="button" class="card__more">Scopri di più <span aria-hidden="true">&rarr;</span></button>
+          <template>
+            <p>Una landing page porta il visitatore dritto al punto, senza distrazioni: è lo strumento perfetto da abbinare alle campagne sponsorizzate.</p>
+            <h4>Cosa include</h4>
+            <ul>
+              <li>Struttura studiata per convincere e far agire</li>
+              <li>Testi chiari e inviti all'azione ben visibili</li>
+              <li>Modulo di contatto o collegamento a WhatsApp</li>
+              <li>Caricamento veloce, anche da smartphone</li>
+              <li>Predisposizione per il monitoraggio dei risultati</li>
+            </ul>
+            <h4>Ideale per</h4>
+            <p>Lancio di prodotti, promozioni, eventi, raccolta contatti.</p>
+          </template>
+        </article>
+        <article class="card" data-servizio="Restyling">
+          <span class="card__num">04</span>
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 20 15 9M13.5 7.5l3 3"/><path d="M18 2.5v3M16.5 4h3M20.5 9v2M19.5 10h2M9 3v2M8 4h2"/></svg>
+          </span>
+          <h3>Restyling</h3>
+          <p>Hai già un sito ma sembra datato? Lo rinnovo nel look e nella struttura, rendendolo moderno, veloce e facile da navigare.</p>
+          <button type="button" class="card__more">Scopri di più <span aria-hidden="true">&rarr;</span></button>
+          <template>
+            <p>Un sito vecchio o lento fa perdere clienti. Con il restyling lo trasformo in uno strumento moderno che lavora davvero per te.</p>
+            <h4>Cosa include</h4>
+            <ul>
+              <li>Analisi del sito attuale e dei punti da migliorare</li>
+              <li>Nuovo design moderno e coerente con il tuo brand</li>
+              <li>Struttura più chiara e semplice da navigare</li>
+              <li>Ottimizzazione per smartphone e velocità</li>
+              <li>Recupero dei contenuti che già funzionano</li>
+            </ul>
+            <h4>Ideale per</h4>
+            <p>Chi ha un sito datato, poco leggibile da telefono o che non porta contatti.</p>
+          </template>
+        </article>
+        <article class="card" data-servizio="Campagne social">
+          <span class="card__num">05</span>
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3.5 10v4a1 1 0 0 0 1 1H7l7 4.5v-15L7 9H4.5a1 1 0 0 0-1 1z"/><path d="M7.5 15l1 5h2.5l-1-4.5M18 9a4 4 0 0 1 0 6M20.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+          </span>
+          <h3>Campagne social</h3>
+          <p>Campagne sponsorizzate su Instagram e Facebook per portare nuove persone sul tuo sito e far crescere la tua attività.</p>
+          <button type="button" class="card__more">Scopri di più <span aria-hidden="true">&rarr;</span></button>
+          <template>
+            <p>Con le campagne sponsorizzate la tua attività arriva alle persone giuste, nella tua zona o in tutta Italia.</p>
+            <h4>Cosa include</h4>
+            <ul>
+              <li>Definizione dell'obiettivo e del pubblico</li>
+              <li>Creazione di grafiche e testi per le inserzioni</li>
+              <li>Impostazione delle campagne su Instagram e Facebook</li>
+              <li>Monitoraggio e ottimizzazione durante la campagna</li>
+              <li>Resoconto finale dei risultati</li>
+            </ul>
+            <h4>Ideale per</h4>
+            <p>Chi vuole più contatti, più visite al sito o farsi conoscere in poco tempo.</p>
+          </template>
+        </article>
+        <article class="card" data-servizio="Logo design">
+          <span class="card__num">06</span>
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 6 13l6 8 6-8z"/><circle cx="12" cy="12.5" r="1.6"/><path d="M12 3v7.9"/><rect x="10.5" y="1.5" width="3" height="3" rx=".5"/></svg>
+          </span>
+          <h3>Logo design</h3>
+          <p>Un logo originale che rappresenta la tua attività e la rende riconoscibile, pronto da usare su sito, social e materiale stampato.</p>
+          <button type="button" class="card__more">Scopri di più <span aria-hidden="true">&rarr;</span></button>
+          <template>
+            <p>Il logo è la prima cosa che le persone ricordano di te. Lo creo partendo dalla tua storia e dai tuoi valori.</p>
+            <h4>Cosa include</h4>
+            <ul>
+              <li>Studio della tua attività e del tuo settore</li>
+              <li>Proposte grafiche originali</li>
+              <li>Revisioni fino al risultato che ti convince</li>
+              <li>Versioni a colori, in bianco e nero e per i social</li>
+              <li>File pronti per web e stampa</li>
+            </ul>
+            <h4>Ideale per</h4>
+            <p>Nuove attività o chi vuole rinnovare la propria immagine.</p>
+          </template>
+        </article>
+      </div>
+
+      <dialog class="modal" id="modal-servizio" aria-labelledby="modal-title">
+        <button type="button" class="modal__close" aria-label="Chiudi">&times;</button>
+        <span class="modal__num"></span>
+        <h3 id="modal-title"></h3>
+        <div class="modal__body"></div>
+        <a href="#contatti" class="btn modal__cta">Parlami del tuo progetto</a>
+      </dialog>
+    </div>
+  </section>
+
+  <!-- LAVORI -->
+  <section id="lavori" class="section section--alt">
+    <div class="container">
+      <p class="eyebrow">PORTFOLIO</p>
+      <h2>Lavori <span class="accent">recenti.</span></h2>
+      <div class="works">
+        <a href="https://micostruzionisrls.com" class="work" target="_blank" rel="noopener">
+          <div class="work__visual">
+            <div class="browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span>micostruzionisrls.com</span></div>
+              <div class="browser__view">
+                <img src="assets/lavori/micostruzioni-desktop.jpg" alt="Anteprima del sito M.I. Costruzioni" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="work__body">
+            <span class="work__tag">Sito vetrina · Impresa edile</span>
+            <h3>M.I. Costruzioni S.R.L.S.</h3>
+            <p>Sito per un'impresa edile di Cremona: presentazione dell'azienda, servizi (cartongesso, imbiancatura, pavimenti, impianti, ristrutturazioni chiavi in mano), galleria dei lavori e contatti.</p>
+            <span class="work__link">Visita il sito &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Progetto doppio (libro + landing): due link separati, quindi il blocco non è un unico link -->
+        <div class="work">
+          <a href="https://arabo-gioco-da-ragazzi.netlify.app/" class="work__visual" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <div class="browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span>arabo-gioco-da-ragazzi.netlify.app</span></div>
+              <div class="browser__view">
+                <img src="assets/lavori/arabo-landing-desktop.jpg" alt="" loading="lazy">
+              </div>
+            </div>
+          </a>
+          <div class="work__body">
+            <span class="work__tag">Libro + Landing page · Progetto editoriale</span>
+            <h3>L'arabo è un gioco da ragazzi!</h3>
+            <p>Un progetto completo dall'idea al lancio: il quaderno per imparare a leggere e scrivere l'alfabeto arabo (testi, copertina, impaginazione, illustrazioni e pubblicazione su Amazon) e la sua landing page colorata, con alfabeto interattivo e acquisto diretto.</p>
+            <div class="work__links">
+              <a href="https://arabo-gioco-da-ragazzi.netlify.app/" class="work__link" target="_blank" rel="noopener">Visita il sito &rarr;</a>
+              <a href="https://amzn.eu/d/0giFYmPg" class="work__link" target="_blank" rel="noopener">Vedi su Amazon &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COME LAVORO -->
+  <section id="metodo" class="section">
+    <div class="container">
+      <p class="eyebrow">COME LAVORO</p>
+      <h2>Dall'idea al sito online, <span class="accent">in 4 passi.</span></h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3>Chiacchierata</h3>
+          <p>Mi racconti la tua attività e cosa vuoi ottenere, anche solo con un messaggio su WhatsApp.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3>Proposta</h3>
+          <p>Ti preparo un preventivo chiaro: cosa è incluso, quanto costa e quando sarà pronto.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3>Realizzazione</h3>
+          <p>Creo il design e ti mostro le bozze: lo sistemiamo insieme finché non ti convince.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">04</span>
+          <h3>Online</h3>
+          <p>Pubblico il sito, controllo che funzioni su ogni dispositivo e ti spiego come usarlo.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CHI SONO -->
+  <section id="chi-sono" class="section section--alt">
+    <div class="container about">
+      <img class="about__logo" src="assets/logo-izwd.jpg" alt="Logo Ingi Z. Web Designer" width="960" height="640" loading="lazy">
+      <div>
+        <p class="eyebrow">CHI SONO</p>
+        <h2>Ciao, sono <span class="accent">Ingi.</span></h2>
+        <p>Mi occupo di web design e digital marketing, con una formazione specifica in entrambi. Aiuto aziende e professionisti a costruire una presenza online che li rappresenti davvero.</p>
+        <p>Per me un sito non deve essere solo bello: deve far capire subito cosa fai e portarti nuovi clienti. Per questo unisco il design alla strategia di marketing, dalla prima bozza fino alle campagne social.</p>
+        <div class="stats">
+          <div class="stat"><span class="stat__num">6</span><span class="stat__label">servizi per la tua attività</span></div>
+          <div class="stat"><span class="stat__num">1</span><span class="stat__label">solo referente, dall'idea al lancio</span></div>
+          <div class="stat"><span class="stat__num">100%</span><span class="stat__label">progetti su misura</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI: nascosta finché non ci sono recensioni vere.
+       Per mostrarla togli "hidden" qui sotto e sostituisci i testi tra parentesi quadre. -->
+  <section id="recensioni" class="section" hidden>
+    <div class="container">
+      <p class="eyebrow">DICONO DI ME</p>
+      <h2>Clienti <span class="accent">soddisfatti.</span></h2>
+      <div class="grid">
+        <figure class="review">
+          <blockquote>[Testo della recensione del cliente]</blockquote>
+          <figcaption><strong>[Nome Cognome]</strong><span>[Attività · Città]</span></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>[Testo della recensione del cliente]</blockquote>
+          <figcaption><strong>[Nome Cognome]</strong><span>[Attività · Città]</span></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>[Testo della recensione del cliente]</blockquote>
+          <figcaption><strong>[Nome Cognome]</strong><span>[Attività · Città]</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMANDE FREQUENTI -->
+  <section id="faq" class="section">
+    <div class="container faq">
+      <div>
+        <p class="eyebrow">DOMANDE FREQUENTI</p>
+        <h2>Hai qualche <span class="accent">dubbio?</span></h2>
+        <p class="faq__intro">Ecco le risposte alle domande che mi fanno più spesso. Non trovi la tua? <a href="#contatti">Scrivimi</a>.</p>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>Quanto costa un sito?</summary>
+          <p>Dipende da cosa ti serve: quante pagine, quali funzioni, se devo occuparmi anche di testi e foto. Raccontami il progetto e ti preparo un preventivo su misura, chiaro e senza sorprese.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Quanto tempo ci vuole?</summary>
+          <p>Dipende dal progetto: una landing page richiede meno tempo di un e-commerce. Nel preventivo trovi sempre i tempi di consegna, così sai da subito quando sarai online.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Cosa mi serve per iniziare?</summary>
+          <p>Basta un'idea di cosa vuoi comunicare. Se hai già logo, testi e foto li usiamo; se mancano, ti aiuto a prepararli.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Il sito si vedrà bene da smartphone?</summary>
+          <p>Sì: ogni progetto è pensato prima di tutto per il telefono, da dove arriva la maggior parte delle visite, e poi adattato a tablet e computer.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Ti occupi anche dei social?</summary>
+          <p>Sì: creo e gestisco campagne sponsorizzate su Instagram e Facebook, per portare nuove persone sul tuo sito e far crescere la tua attività.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti" class="section contact">
+    <div class="container contact__inner">
+      <div class="contact__intro">
+        <p class="eyebrow">Contatti</p>
+        <h2>Parlami della tua <span class="accent">idea.</span></h2>
+        <p>Compila il modulo: bastano pochi minuti. Il messaggio arriva direttamente sul mio WhatsApp e ti rispondo il prima possibile.</p>
+        <div class="contact__direct">
+          <a href="tel:+393285834828">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+            </span>
+            <span><small>Telefono</small>+39 328 583 4828</span>
+          </a>
+          <a href="https://wa.me/393285834828" target="_blank" rel="noopener">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+            </span>
+            <span><small>WhatsApp</small>Scrivimi un messaggio</span>
+          </a>
+          <a href="mailto:ingiwebdesigner@gmail.com">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+            </span>
+            <span><small>Email</small>ingiwebdesigner@gmail.com</span>
+          </a>
+          <a href="https://www.instagram.com/i.z_webdesigner_/" target="_blank" rel="noopener">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1"/></svg>
+            </span>
+            <span><small>Instagram</small>@i.z_webdesigner_</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="form" id="richiesta" novalidate>
+        <div class="form__row">
+          <label class="field">
+            <span>Nome e cognome *</span>
+            <input type="text" name="nome" required autocomplete="name">
+          </label>
+          <label class="field">
+            <span>Attività / azienda</span>
+            <input type="text" name="attivita" autocomplete="organization">
+          </label>
+        </div>
+
+        <fieldset class="field">
+          <legend>Di cosa hai bisogno? *</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="servizi" value="Sito vetrina"><span>Sito vetrina</span></label>
+            <label class="chip"><input type="checkbox" name="servizi" value="E-commerce Shopify"><span>E-commerce Shopify</span></label>
+            <label class="chip"><input type="checkbox" name="servizi" value="Landing page"><span>Landing page</span></label>
+            <label class="chip"><input type="checkbox" name="servizi" value="Restyling"><span>Restyling</span></label>
+            <label class="chip"><input type="checkbox" name="servizi" value="Campagne social"><span>Campagne social</span></label>
+            <label class="chip"><input type="checkbox" name="servizi" value="Logo design"><span>Logo design</span></label>
+            <label class="chip"><input type="checkbox" name="servizi" value="Non lo so ancora"><span>Non lo so ancora</span></label>
+          </div>
+        </fieldset>
+
+        <div class="form__row">
+          <label class="field">
+            <span>Hai già un sito o una pagina social?</span>
+            <input type="text" name="link" placeholder="Incolla il link (facoltativo)">
+          </label>
+          <label class="field">
+            <span>Quando vorresti partire?</span>
+            <select name="tempi">
+              <option value="">Seleziona</option>
+              <option>Il prima possibile</option>
+              <option>Entro 1 mese</option>
+              <option>Entro 3 mesi</option>
+              <option>Sto solo valutando</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Raccontami il tuo progetto *</span>
+          <textarea name="idea" rows="5" required placeholder="Di cosa si occupa la tua attività, cosa vorresti ottenere, eventuali siti che ti piacciono…"></textarea>
+        </label>
+
+        <p class="form__error" id="form-error" role="alert" hidden></p>
+
+        <div class="form__success" id="form-success" role="status" hidden>
+          <span class="form__success-icon" aria-hidden="true">&check;</span>
+          <div>
+            <strong>Grazie, la tua richiesta è pronta!</strong>
+            <p>Si è aperto WhatsApp con il tuo messaggio: premi <b>Invia</b> e ti ricontatto il prima possibile.</p>
+            <p class="form__success-small">WhatsApp non si è aperto? <a href="#" id="form-success-link" target="_blank" rel="noopener">Clicca qui</a>.</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn form__submit">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+          Invia la richiesta su WhatsApp
+        </button>
+        <p class="form__privacy">Inviando la richiesta i tuoi dati vengono usati solo per risponderti. Leggi la <a href="privacy.html">privacy policy</a>.</p>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <blockquote class="footer__quote">
+        <span class="footer__quote-mark" aria-hidden="true">&ldquo;</span>
+        <p>Il tuo sito è la prima impressione che lasci.<br>Facciamo in modo che sia <span class="accent">indimenticabile.</span></p>
+        <cite>Ingi Z. · Web Designer</cite>
+      </blockquote>
+
+      <div class="footer__grid">
+        <nav class="footer__col" aria-label="Menu del sito">
+          <h4>Menu</h4>
+          <a href="#">Home</a>
+          <a href="#servizi">Servizi</a>
+          <a href="#lavori">Lavori</a>
+          <a href="#metodo">Come lavoro</a>
+          <a href="#chi-sono">Chi sono</a>
+          <a href="#faq">Domande frequenti</a>
+          <a href="#contatti">Parliamone</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Seguimi</h4>
+          <a href="https://www.instagram.com/i.z_webdesigner_/" target="_blank" rel="noopener" class="footer__social">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            @i.z_webdesigner_
+          </a>
+        </div>
+        <div class="footer__col">
+          <h4>Orari di lavoro</h4>
+          <ul class="hours">
+            <li><span>Lunedì – Sabato</span><span>9:00 – 18:00</span></li>
+            <li><span>Domenica</span><span class="hours__closed">Chiuso</span></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contatti</h4>
+          <a href="tel:+393285834828">Tel. +39 328 583 4828</a>
+          <a href="https://wa.me/393285834828" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:ingiwebdesigner@gmail.com">ingiwebdesigner@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 <span class="footer__brand">Ingi Z.</span> · Web Designer</span>
+        <!-- Se hai la Partita IVA, togli il commento e inserisci il numero:
+        <span>P.IVA 00000000000</span> -->
+        <a href="privacy.html">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pulsante WhatsApp sempre visibile -->
+  <a href="https://wa.me/393285834828" class="wa-float" target="_blank" rel="noopener" aria-label="Scrivimi su WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
