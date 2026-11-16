@@ -5,6 +5,7 @@
     <lastmod>2026-11-16</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://ingiwebdesigner.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ingiwebdesigner.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ingiwebdesigner.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ingiwebdesigner.com/"/>
   </url>
   <url>
@@ -12,6 +13,15 @@
     <lastmod>2026-11-16</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://ingiwebdesigner.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ingiwebdesigner.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ingiwebdesigner.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ingiwebdesigner.com/"/>
+  </url>
+  <url>
+    <loc>https://ingiwebdesigner.com/ar/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ingiwebdesigner.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ingiwebdesigner.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ingiwebdesigner.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ingiwebdesigner.com/"/>
   </url>
 </urlset>
