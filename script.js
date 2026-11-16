@@ -1,33 +1,21 @@
-// Testi che cambiano in base alla lingua della pagina (italiano, inglese in /en/, arabo in /ar/)
-const LINGUA = document.documentElement.lang;
-const RADICE = LINGUA === "it" ? "" : "../";
-const TESTI = {
-  en: {
-    arabo: "Learning Arabic made easy",
-    manca: "Still missing: ",
-    nome: "your name", servizio: "at least one service", idea: "a short description of your project",
-    saluto: "Hi Ingi! I'm writing from your website.",
-    campoNome: "Name", campoAttivita: "Business", campoServizi: "I need",
-    campoLink: "Current website/social", campoTempi: "Timing", campoIdea: "My project",
-  },
-  ar: {
-    arabo: "L'arabo è un gioco da ragazzi!",
-    manca: "لم يكتمل بعد: ",
-    nome: "اسمك", servizio: "خدمة واحدة على الأقل", idea: "وصف قصير لمشروعك",
-    saluto: "مرحباً إنجي! أكتب إليك من موقعك.",
-    campoNome: "الاسم", campoAttivita: "النشاط التجاري", campoServizi: "أحتاج إلى",
-    campoLink: "الموقع/الحساب الحالي", campoTempi: "الموعد", campoIdea: "مشروعي",
-  },
-  it: {
-    arabo: "L'arabo è un gioco da ragazzi!",
-    manca: "Manca ancora: ",
-    nome: "il tuo nome", servizio: "almeno un servizio", idea: "una breve descrizione del progetto",
-    saluto: "Ciao Ingi! Ti scrivo dal tuo sito.",
-    campoNome: "Nome", campoAttivita: "Attività", campoServizi: "Mi serve",
-    campoLink: "Sito/social attuale", campoTempi: "Tempistiche", campoIdea: "Il mio progetto",
-  },
+// Testi che cambiano in base alla lingua della pagina (italiano o inglese in /en/)
+const INGLESE = document.documentElement.lang === "en";
+const RADICE = INGLESE ? "../" : "";
+const T = INGLESE ? {
+  arabo: "Learning Arabic made easy",
+  manca: "Still missing: ",
+  nome: "your name", servizio: "at least one service", idea: "a short description of your project",
+  saluto: "Hi Ingi! I'm writing from your website.",
+  campoNome: "Name", campoAttivita: "Business", campoServizi: "I need",
+  campoLink: "Current website/social", campoTempi: "Timing", campoIdea: "My project",
+} : {
+  arabo: "L'arabo è un gioco da ragazzi!",
+  manca: "Manca ancora: ",
+  nome: "il tuo nome", servizio: "almeno un servizio", idea: "una breve descrizione del progetto",
+  saluto: "Ciao Ingi! Ti scrivo dal tuo sito.",
+  campoNome: "Nome", campoAttivita: "Attività", campoServizi: "Mi serve",
+  campoLink: "Sito/social attuale", campoTempi: "Tempistiche", campoIdea: "Il mio progetto",
 };
-const T = TESTI[LINGUA] || TESTI.it;
 
 // Animazioni: comparsa degli elementi mentre si scorre la pagina
 const MOVIMENTO = !matchMedia("(prefers-reduced-motion: reduce)").matches;
