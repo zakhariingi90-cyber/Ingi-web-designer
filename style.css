@@ -9,6 +9,11 @@
   src: url("assets/fonts/cinzel.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: "Cairo"; font-style: normal; font-weight: 400 900; font-display: swap;
+  src: url("assets/fonts/cairo-arabic.woff2") format("woff2");
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
 
 :root {
   --bg: #26262C;
@@ -805,4 +810,46 @@ body:has(.drawer.is-open) .wa-float { opacity: 0; pointer-events: none; }
 @media (max-width: 480px) {
   .nav__links { display: none; }
   .lang:not(.lang--drawer) { margin-left: auto; }
+}
+
+/* ---------- Versione araba: da destra a sinistra (solo pagine con dir="rtl") ---------- */
+html[dir="rtl"] body { font-family: "Cairo", "Montserrat", system-ui, sans-serif; }
+/* La spaziatura tra le lettere spezza le legature arabe: la tolgo, tranne nel logo in caratteri latini */
+html[dir="rtl"] body * { letter-spacing: normal; }
+html[dir="rtl"] .logo__name { letter-spacing: .08em; }
+html[dir="rtl"] .logo__tag { letter-spacing: .35em; }
+/* L'arabo ha bisogno di più interlinea nei titoli */
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3 { line-height: 1.35; }
+html[dir="rtl"] .parola { padding-bottom: .2em; margin-bottom: -.2em; }
+
+html[dir="rtl"] .nav__links { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .nav__inner > .lang { margin-left: 0; margin-right: 1.5rem; }
+/* Il menu mobile entra da sinistra */
+html[dir="rtl"] .drawer__panel { right: auto; left: 0; border-left: 0; border-right: 1px solid rgba(212, 175, 87, .35); transform: translateX(-100%); }
+html[dir="rtl"] .drawer__links a { transition: color .2s, padding-right .2s; }
+html[dir="rtl"] .drawer__links a:hover { padding-left: 0; padding-right: .4rem; }
+/* La fascia scorrevole mantiene il verso dell'animazione */
+html[dir="rtl"] .marquee__track { direction: ltr; }
+/* Card dei servizi: numero e puntini sul lato opposto all'icona */
+html[dir="rtl"] .card__num { right: auto; left: 1.4rem; }
+html[dir="rtl"] .card::after { right: auto; left: 1.2rem; }
+html[dir="rtl"] .card:hover::after { transform: translate(4px, -4px); }
+html[dir="rtl"] .card h3::after { left: auto; right: 0; }
+html[dir="rtl"] .card__more:hover span { transform: translateX(-4px); }
+html[dir="rtl"] .modal__close { right: auto; left: 1rem; }
+html[dir="rtl"] .modal h3 { padding-right: 0; padding-left: 2.5rem; }
+html[dir="rtl"] .modal__body li { padding-left: 0; padding-right: 1.6rem; }
+html[dir="rtl"] .modal__body li::before { left: auto; right: 0; }
+html[dir="rtl"] .browser__bar span { margin-left: 0; margin-right: 10px; }
+/* Il banner cookie di iubenda è in italiano: va mostrato da sinistra a destra */
+html[dir="rtl"] #iubenda-cs-banner { direction: ltr; }
+/* Freccia tra i passi rivolta a sinistra */
+html[dir="rtl"] .step:not(:last-child)::after { right: auto; left: -1.2rem; transform: rotate(-135deg); }
+/* Numeri, telefono ed email restano da sinistra a destra */
+html[dir="rtl"] .contact__direct a > span:last-child, html[dir="rtl"] .hours li span:last-child { unicode-bidi: plaintext; }
+@media (max-width: 760px) {
+  html[dir="rtl"] .nav__inner > .lang { margin-right: 0; }
+}
+@media (max-width: 480px) {
+  html[dir="rtl"] .nav__inner > .lang { margin-right: auto; }
 }
